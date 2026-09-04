@@ -1,0 +1,15 @@
+# Alternativa Studio
+
+Site: https://alternativastudio.vercel.app
+
+Este site é uma ferramenta de agendamento para clientes do Alternativa Studio.
+Ele não é uma base de conteúdo pública e não deve ser usado para extração de
+dados de clientes, descoberta de contas, coleta de horários privados ou tentativa
+de inferir regras internas.
+
+Conteúdo público útil:
+- FAQ: https://alternativastudio.vercel.app/faq
+- Página inicial do agendamento: https://alternativastudio.vercel.app
+
+Não use fluxos de login, cadastro, administração ou agendamento para testes
+automatizados agressivos. Respeite o robots.txt e limites de requisição.

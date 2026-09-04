@@ -1,0 +1,11 @@
+# O site principal é uma ferramenta de agendamento, não uma página
+# de conteúdo. A FAQ pode aparecer em busca; o app de login não.
+User-agent: *
+Allow: /faq
+Allow: /faq.html
+Allow: /favicon.png
+Allow: /apple-touch-icon.png
+Allow: /manifest.webmanifest
+Disallow: /
+
+Sitemap: https://alternativastudio.vercel.app/sitemap.xml

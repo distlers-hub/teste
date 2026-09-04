@@ -1,0 +1,51 @@
+/*
+  # ============================================================
+  # Cabeçalhos de segurança — lidos automaticamente pela Netlify
+  # (na Cloudflare Pages funciona igual; na Vercel use vercel.json)
+  # ============================================================
+
+  # Impede o site de ser embutido num iframe de outro domínio.
+  # Sem isso existe clickjacking: alguém coloca o site num iframe
+  # transparente por cima de outra página e a pessoa clica em
+  # "cancelar agendamento" achando que clicou noutra coisa.
+  X-Frame-Options: DENY
+
+  # Impede o navegador de "adivinhar" o tipo do arquivo. Sem isso,
+  # um upload que o servidor entrega como imagem pode ser executado
+  # como script se o conteúdo parecer script.
+  X-Content-Type-Options: nosniff
+
+  # Não vaza a URL completa para sites de terceiros.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Nega de saída o que o site não usa. Se um script injetado tentar
+  # abrir câmera ou geolocalização, o navegador recusa antes de
+  # aparecer o pedido de permissão para a cliente.
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=()
+
+  # Só HTTPS por 2 anos. Impede downgrade para HTTP em rede pública.
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+  # ------------------------------------------------------------
+  # CSP — a trava que mais importa
+  # ------------------------------------------------------------
+  # Diz de onde o navegador PODE carregar cada coisa. Mesmo que
+  # alguém consiga injetar um <script src="site-do-atacante">, o
+  # navegador recusa por não estar nesta lista.
+  #
+  # 'unsafe-inline' em script-src é necessário porque o app inteiro
+  # é um <script> embutido no HTML — é o preço de ser arquivo único.
+  # Isso enfraquece a CSP contra XSS refletido, e é por isso que o
+  # escape por padrão (a template tag h``) continua sendo a defesa
+  # principal, não esta linha.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://auhloobyfdjszrlqcfyp.supabase.co wss://auhloobyfdjszrlqcfyp.supabase.co https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+
+/backend/*
+  # Cinto e suspensório: o certo é não subir a pasta backend para a
+  # hospedagem. Se subir por engano, aqui ela some do índice e não
+  # é servida como texto.
+  X-Robots-Tag: noindex, nofollow
+  Content-Type: text/plain
+
+/*.sql
+  X-Robots-Tag: noindex, nofollow

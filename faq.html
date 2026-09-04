@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ | Alternativa Studio</title>
+  <meta name="description" content="Perguntas frequentes sobre cadastro, agendamento, sinal, remarcacao e uso do site do Alternativa Studio.">
+  <link rel="canonical" href="https://alternativastudio.vercel.app/faq">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    :root{color-scheme:dark;--bg:#12060d;--panel:#1b0c14;--line:#513043;--pink:#ff7eb6;--pink2:#bd2a70;--soft:#ffd1e3;--text:#fff4fa;--muted:#caa0b5}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -12%,#42122b 0,#170812 44%,#080407 100%);color:var(--text);font-family:Inter,Arial,sans-serif;padding:28px}
+    .page{width:min(920px,100%);margin:0 auto}
+    .top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--soft);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .brand img{width:42px;height:42px;object-fit:contain}
+    .back{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:8px;color:var(--soft);text-decoration:none;font-weight:700}
+    h1{margin:0 0 12px;font-size:clamp(34px,6vw,64px);line-height:.98;letter-spacing:0;color:var(--soft)}
+    .lead{max-width:650px;margin:0 0 28px;color:var(--muted);line-height:1.55}
+    .list{display:grid;gap:12px}
+    details{border:1px solid var(--line);border-radius:8px;background:rgba(27,12,20,.72);overflow:hidden}
+    summary{cursor:pointer;list-style:none;padding:18px 20px;color:var(--soft);font-weight:800}
+    summary::-webkit-details-marker{display:none}
+    details[open] summary{border-bottom:1px solid var(--line)}
+    p{margin:0;padding:0 20px 20px;color:var(--muted);line-height:1.6}
+    .cta{margin-top:26px;display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 18px;border-radius:8px;background:linear-gradient(135deg,var(--pink),var(--pink2));color:#16040d;text-decoration:none;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+    a:focus-visible,summary:focus-visible{outline:2px solid var(--soft);outline-offset:4px}
+    @media(max-width:620px){body{padding:20px}.top{align-items:flex-start;flex-direction:column}.back,.cta{width:100%}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top">
+      <div class="brand"><img src="/favicon.png" alt="">Alternativa Studio</div>
+      <a class="back" href="/">Voltar</a>
+    </div>
+    <h1>Perguntas frequentes</h1>
+    <p class="lead">Respostas rapidas para clientes que vao criar cadastro, escolher um horario e acompanhar o agendamento.</p>
+    <section class="list" aria-label="Perguntas frequentes">
+      <details open>
+        <summary>Como faco meu cadastro?</summary>
+        <p>Entre no site, toque em criar cadastro, informe seus dados e aceite os termos. Depois voce acessa com e-mail e senha.</p>
+      </details>
+      <details>
+        <summary>Como marco um horario?</summary>
+        <p>Escolha o servico, selecione um dia disponivel no calendario e toque em um horario livre. O sistema bloqueia horarios que ja estao ocupados.</p>
+      </details>
+      <details>
+        <summary>Como funciona o sinal?</summary>
+        <p>Depois de solicitar o horario, siga as instrucoes de pagamento do sinal. A confirmacao acontece quando o studio confere o pagamento.</p>
+      </details>
+      <details>
+        <summary>Posso remarcar?</summary>
+        <p>Sim. Use o botao de solicitar remarcacao pelo WhatsApp. A administradora faz a troca e o horario anterior volta a ficar livre.</p>
+      </details>
+      <details>
+        <summary>Posso cancelar?</summary>
+        <p>Quando um agendamento e cancelado, aquele horario fica disponivel novamente para outra cliente.</p>
+      </details>
+      <details>
+        <summary>Posso instalar como app?</summary>
+        <p>Sim. No celular, use o botao de adicionar como app ou a opcao do navegador para colocar o site na tela inicial.</p>
+      </details>
+      <details>
+        <summary>Meus dados ficam protegidos?</summary>
+        <p>O site usa login, regras no banco e verificacao anti-bot. Nunca compartilhe sua senha com outras pessoas.</p>
+      </details>
+      <details>
+        <summary>Nao encontrei um horario bom. O que faco?</summary>
+        <p>Entre em contato pelo WhatsApp do studio para verificar encaixes ou mudancas futuras na agenda.</p>
+      </details>
+    </section>
+    <a class="cta" href="/">Abrir agendamento</a>
+  </main>
+</body>
+</html>

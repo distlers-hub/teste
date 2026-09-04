@@ -1,0 +1,31 @@
+{
+  "name": "Alternativa Studio",
+  "short_name": "Alternativa",
+  "description": "Agendamentos do Alternativa Studio",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#090405",
+  "theme_color": "#0a0708",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

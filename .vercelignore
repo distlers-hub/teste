@@ -1,0 +1,27 @@
+work
+work/**
+.git
+.git/**
+outputs
+outputs/**
+.vercel/output
+.vercel/output/**
+.vercel/**/work
+.vercel/**/npm-cache
+*.log
+__pycache__
+__pycache__/**
+female_voice_cleanup.py
+*.sql
+backend
+_fonte-dos-textos
+motion
+motion/**
+motion-saas
+motion-saas/**
+index-motion.html
+MANUAL.html
+PROMPT_PARA_CLAUDE.md
+index_backup_antes_codex.html
+index_novo.html
+LEIA ISTO ANTES.txt
