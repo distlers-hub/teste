@@ -1,0 +1,10 @@
+.vercel
+.vercel/output/
+work/
+outputs/
+motion/
+motion-saas/
+index-motion.html
+*.log
+__pycache__/
+female_voice_cleanup.py
