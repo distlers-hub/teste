@@ -1,9 +1,10 @@
-const CACHE = 'alternativa-shell-v3';
+const CACHE = 'alternativa-shell-v4';
 const SHELL = [
   '/',
   '/index.html',
   '/faq.html',
   '/404.html',
+  '/qrcode.min.js',
   '/favicon.png',
   '/apple-touch-icon.png',
   '/manifest.webmanifest'
